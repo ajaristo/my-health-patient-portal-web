@@ -1,0 +1,37 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>VARIABLE.HTML</h1>
+    {% comment %} <h2>Patient first name: {{first_name}}</h2>
+    <h2>Patient last name: {{last_name | lower | capfirst}}</h2>
+    <h2>{{some_dict.inside_key}}</h2>
+    <h2>{# this is a comment #}</h2> {% endcomment %}
+    {% comment %} <ul>
+    {% for k, v in some_dict.items %}
+        <li>{{v}}</li>
+    {% endfor %}
+    </ul> {% endcomment %}
+
+    {% comment %} <ul>
+    {% for num in some_list %}
+
+        {% if num == 2 %}
+            <li>TWO</li>
+        {% else %}
+            <li>{{num}}</li>
+        {% endif %}
+    
+    {% endfor %}
+    </ul> {% endcomment %}
+
+     <h2>{{jsonPatient}}</h2> 
+
+    
+
+</body>
+</html>
