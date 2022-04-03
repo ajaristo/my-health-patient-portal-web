@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>MyHealth Patient Portal</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+</style>
+</head>
+<body class="w3-light-grey">
+
+    {%load static%}
+
+<!-- Page Container -->
+<div class="w3-content w3-margin-top" style="max-width:1400px;">
+
+  <!-- The Grid -->
+  <div class="w3-row-padding">
+  
+    <!-- Left Column -->
+    <div class="w3-third">
+      <div class="w3-white w3-text-grey w3-card-4">
+        <div class="w3-display-container">
+          <img src={% static 'my_app/avatar.png'%} style="width:100%" alt="Avatar">
+          <div class="w3-display-bottomleft w3-container w3-text-black">
+            {% comment %} <h2>Jane Doe</h2> {% endcomment %}
+          </div>
+        </div>
+        <div class="w3-container">
+          <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>Full name: {{givenName}} {{familyName}}</p>
+          <p><i class="fa fa-id-card fa-fw w3-margin-right w3-large w3-text-teal"></i>id: {{id}}</p>
+          <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>Home Address: {{address}}</p>
+          <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>Birthdate: {{birthDate}}</p>
+          <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>Phone (Home): {{homePhone}}</p>
+          <p><i class="fa fa-flag fa-fw w3-margin-right w3-large w3-text-teal"></i>State/Country: {{state}}, {{country}}</p>
+          <hr>
+
+          <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Lab Results for Dr. Amber Hook's Consultation</b></p>
+          <p>Blood Glucose (F) </p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:80%">126 mgs/dl</div>
+          </div>
+          <p>Blood Glucose (PP)</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:75%">
+              <div class="w3-center w3-text-white">121 mgs/dl</div>
+            </div>
+          </div>
+          <p>Chloride, Serum</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:35%">101 mmol/L</div>
+          </div>
+          <p>Alkaline Phosphate, s</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:60%">70 UI/L</div>
+          </div>
+          <br>
+
+         <p class="w3-large w3-text-theme"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-teal"></i>Recent consultation notes</b></p>
+          <p>Dr. Heather Foster's Consultation Notes - Wednesday, February 2, 2022</p>
+          <div class="w3-light-grey w3-round-xlarge">
+            <p> <p style="color:red"> ASSESSMENT: </p> The patient and her daughter completed both days of diabetes education in a group setting. Blood glucose records and food diaries are reviewed by the diabetes educator and the dietician. Fasting blood sugars are 127, 80, and 80. Two-hour postprandial breakfast reading was 105, two-hour postprandial lunch reading was 88, and two-hour postprandial dinner reading was 73 and 63. Her diet was excellent.
+
+                Seven hours of counseling about diabetes mellitus was provided on this date.
+                Blood glucose values obtained at 10 a.m. were 84 and at 2.30 p.m. were 109. Assessment of her knowledge is completed at the end of the counseling session. She demonstrated increased knowledge in all areas and had no further questions. She also completed an evaluation of the class.
+                
+                The patient's feet were examined during the education session. She had flat feet bilaterally. Skin color was pink, temperature warm. Pedal pulses 2+. Her right second and third toes lay on each other. Also, the same on her left foot. However, there was no skin breakdown. She had large bunions, medial aspect of the ball of both feet. She had positive sensitivity to most areas of her feet, however, she had negative sensitivity to the medial and lateral aspect of the balls of her left foot.
+                
+                During the education session, she set behavioral goals for self care. First goal is to eat three meals a day and eat three snacks daily to improve her blood glucose levels. Second goal is to eat a well balanced meal at 1200 calories in order to lose one-half pound of weight per week and improve her blood glucose control. Third goal is to exercise by walking for 15 to 30 minutes a day, three to five days a week to increase her blood glucose control. Her success in achieving these goals will be followed in three months by a letter from the diabetes education class.
+                
+                <p style="color:red"> RECOMMENDATIONS: </p> Since she is doing so well with her diet changes, her blood sugars have been within normal limits and sometimes on the low side, especially considering the fact that she has low blood sugar unawareness. She is to followup with Dr. XYZ for possible reduction in her insulin doses.
+                </p>
+          </div>
+          <br>
+        </div>
+      </div><br>
+
+    <!-- End Left Column -->
+    </div>
+
+    <!-- Right Column -->
+    <div class="w3-twothird">
+    
+      <div class="w3-container w3-card w3-white w3-margin-bottom">
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Upcoming Appointments</h2>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Dr. Heather Foster</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Wednesday, April 13, 2022 <span class="w3-tag w3-teal w3-round">in 11 days</span></h6>
+          <p>Toronto, Ontario - Palliser One Building - Consultation follow-up</p>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Dr. Steve Burn</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Friday, April 15, 2022 <span class="w3-tag w3-teal w3-round">in 13 days</span></h6>
+          <p>Toronto, Ontario - Market Mall Professional Centre - Stress test</p>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Dr. Amber Hook</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i> Monday, April 18, 2022 <span class="w3-tag w3-teal w3-round">in 15 days</span></h6>
+          <p>Toronto, Ontario - Town Square Building, Floor 8 - Annual check-up </p><br>
+        </div>
+      </div>
+
+      <div class="w3-container w3-card w3-white">
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>E-Learning for Diabetes</h2>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Overview of Diabetes: Types and Treatments</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-fw w3-margin-right"></i>Source: https://www.webmd.com/diabetes/default.htm</h6>
+          <p>Diabetes is a number of diseases that involve problems with the hormone insulin. Normally, the pancreas (an organ behind the stomach) releases insulin to help your body store and use the sugar and fat from the food you eat. Diabetes occurs when one of the following occurs...(Continue reading) </p>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>What Is Type 2 Diabetes?</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Source: https://www.webmd.com/diabetes/type-2-diabetes</h6>
+          <p>Type 2 diabetes is a lifelong disease that keeps your body from using insulin the way it should. People with type 2 diabetes are said to have insulin resistance...(Continue reading)</p>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Type 2 Diabetes Causes and Risk Factors</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Source: https://www.webmd.com/diabetes/diabetes-causes</h6>
+          <p>Although not everyone with type 2 diabetes is overweight, obesity and an inactive lifestyle are two of the most common causes of type 2 diabetes. These things are responsible for about 90% to 95% of diabetes cases in the United States...(Continue reading)</p><br>
+        </div>
+      </div>
+
+    <!-- End Right Column -->
+    </div>
+    
+  <!-- End Grid -->
+  </div>
+  
+  <!-- End Page Container -->
+</div>
+
+<footer class="w3-container w3-teal w3-center w3-margin-top">
+  <p>Follow myHealth patient portal on social media.</p>
+  <i class="fa fa-facebook-official w3-hover-opacity"></i>
+  <i class="fa fa-instagram w3-hover-opacity"></i>
+  <i class="fa fa-snapchat w3-hover-opacity"></i>
+  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+  <i class="fa fa-twitter w3-hover-opacity"></i>
+  <i class="fa fa-linkedin w3-hover-opacity"></i>
+  <p>Copyright 2022</p>
+</footer>
+
+</body>
+</html>
