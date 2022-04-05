@@ -1,12 +1,1 @@
-{
-  "type": "service_account",
-  "project_id": "cs-792-my-health",
-  "private_key_id": "083c7ccd10ab3712b74ff45ebb2e3e8b954513a0",
-  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEuwIBADANBgkqhkiG9w0BAQEFAASCBKUwggShAgEAAoIBAQCU/tXx60afRyNx\nCW+FA3vvsQSZT7nQdyrsKKtuon2AaqsX0ErY4msXWws8A0NX5pj7zoRrMyythRcC\naObfIF9HIPCrX9QBpX/1W4zx11O1albRFe8kP0onWd8LeuSviOTDlnH3kZBcqaU/\ng6WMvW3n0eRQ41sMT+cMl9jjfFMsFxWkgT6ve2NDuowquJY/uRtRZZIHp7PCkufp\nRJoWEK8Pqw0GXyqdhapc4e8V0YkBGJ+KGtlG6/lwGkDhZtYSJlguz+ppkBU1eRhJ\naKKS57cwsLkrAXCzRQopLIPJw4zeoV+Xjrg/ctnIg2Fh9I5ZrrvCj4RxKlb3r8GB\n/m88UFVvAgMBAAECgf8LDt7SFaQoLh9zREACnz+Tio/M0R35Wt7UqDARBf5KiaAp\nJExpzGQmV5t92MAmxfaUub8aNbIbLsWGaEK6TKzFmqxCC9qwRJg6nZDYYiLUVBAd\ndINLLWdThFgJghV28bII0iGjPip4th6NmDexOl3t1qYbWsRnJYcAaESwnYmOvArg\nia46dPQuvq3dXJ1i04make+8uHlWgxlk3vePtn+aKtCH159hIbzlQTKt40D05zCy\nJH8hU14646YdDqGQEPfbnWuvC49d38WcQjbi/OSupACNDfHNC+gb8GX8Uup1Zpd/\nLw9oXkzvr9qBfP/5Afk6z9VwC4EzeE8paDEoe9ECgYEAxsfDZIa8jtE487/qNPg3\n9FaVvaohyEXRT1/IoxITgf4S4KK2m4F0S2mUk1YnPl8P3mIuLOXlLACwBjtnDEkM\n3GAcGoPvnlStZuDzgwkk9MequXoELxV+lwyJyHs7iQKIrJcnP7pBYFjOCIcR6Scn\nzqjBXHBvr7hYqJXuCEoQnWkCgYEAv+Jlfv55AbnvP1zH62n7cgbWBh7GcW94Vm7w\nXPrT8u2tgU1VpxHnXpUWNDfGJE8UP9KZPOoogpReYwhGmQMSVGiHo3OPtLKGdPxB\nltfgq+iQ/RwEDatemW+Oa3qxw2wKi/X0LS6TuLM+6nf2x2hRwXsDMh1Po+7W9Xaf\n2JhNiRcCgYBhRYPB/4Tpxkw+Sx2KyiRndq9T3psla7TfSJnf4oqVRAVs03LUaebE\nuGeyKaiOhuo3AohiBCW/AJ8ijZMBmgWnGYjnGMT7D6jC/TVsW98vwT00AhdmCvil\nZcdOya76frju7BCSyMwRH6PC3IXROA3svPvSBltA+862wJd4ivXScQKBgQCp6F91\nHwGpPKoT0iUYWGUVJ+Z1zuRq54iICH3/5v6sWjdLil3wrRLRlnPt0wE5f2hvxxx3\nauRqE9SsHlTdAnJFmbWZTyeNmpMinYe6ePdxYWKZLSiNrhP7C2Px2df0MgP4wNXw\n+BBH+TgZyBYVplLWXwWKZ5fwkfl3qw2JbfsiCwKBgAySzP5fDh4QLxqs4sDq4ad6\nlW84x1k/W33B0KQrbsZXpIXBNudJO50cGLRqo+OMU44ehism8jOXAx39xb4jpi7y\nxDD9VxqKW2ZyucrBuIBLKM1KrqTfq20ss1lXihXEGlyPCEYfzU45ltRhZmdXm1rW\nu69KdmW4vLRD5n1fY/6/\n-----END PRIVATE KEY-----\n",
-  "client_email": "service-account-cs-792@cs-792-my-health.iam.gserviceaccount.com",
-  "client_id": "105822796084145364866",
-  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
-  "token_uri": "https://oauth2.googleapis.com/token",
-  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
-  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/service-account-cs-792%40cs-792-my-health.iam.gserviceaccount.com"
-}
+
